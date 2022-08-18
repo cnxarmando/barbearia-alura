@@ -1,0 +1,511 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* ================ CSS padrão ==================== */
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to bottom, #f0f2f6, #dce2e4, #cbd1d0, #bcc0bd, #afafaa); 
+}
+
+h1 {
+  font-size: 4em;  
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h1, h2 {
+  color: rgb(47, 47, 47);
+  text-shadow: 0 0 1px rgb(253, 251, 251);
+  font-weight: bold;
+  padding: 3rem 0;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  text-align: justify;
+  margin-bottom: 3rem;  
+}
+
+header {
+  width: 100%;  
+  padding: 2rem 0;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+ul {
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#home-itens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu {
+  display: inline;
+}
+
+nav a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.7rem;
+  transition: 0.7s;
+  color: rgb(0, 0, 0);
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border-radius: 2rem;
+  text-decoration: underline;
+  transition: 0.9s;
+}
+
+#banner {
+  width: 100%;  
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 2rem;
+  background: url(./img/produto/bg.jpg);
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 1.3rem;
+  color: rgb(251, 249, 249);
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+hr {
+  margin: 2rem 0 2rem 0;
+  border: 0;
+  height: 0.3rem;
+  background-image: linear-gradient(to right, transparent, rgb(88, 86, 86), transparent);
+}
+
+
+/* ================ Fim CSS padrão ==================== */  
+
+/* ================ CSS Home ==================== */
+video {
+  position: absolute;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sobre {
+  background: azure;
+  margin: 2rem 0;
+  border-radius: 3rem;
+  padding: 2rem;  
+}
+
+.utencilios {
+  width: 15rem;
+  float: left;
+  margin: 0 2rem 2rem 0
+}
+
+em, strong {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;  
+}
+
+em strong {
+  color: blue;
+}
+
+.mapa {
+  background: azure;
+  margin: 2rem 0;
+  border-radius: 3rem;
+  padding: 2rem; 
+}
+
+.mapa p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;  
+}
+
+.mapa p:first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.mapa iframe {
+  border-radius: 3rem;
+}
+
+.beneficios{
+  background-color: azure;
+  border-radius: 3rem;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.lista-beneficios {
+  display: inline-block;
+  width: 40%; 
+  vertical-align: top; 
+}
+
+.itens {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-style: italic;
+  cursor: pointer;
+  list-style: none;
+}
+
+.itens::before {
+  content: "✮ ";
+}
+
+.itens:first-child {
+  font-weight: 600;
+}
+
+.imgbeneficios {
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 3rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 1rem 1rem 1rem 0 rgba(0, 0, 0, 0.5);
+  transition: 0.7s;
+}
+
+.imgbeneficios:hover {
+  opacity: 0.7;
+  transition: 0.7s;
+}
+
+.video {
+  width: 560px;
+  margin: 2rem auto;
+}
+
+/* =============CSS produto============ */
+
+.produtos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.produto {
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 3rem;
+  height: auto;
+  transition: 0.7s;
+}
+
+.produto:hover {
+  border: 3px solid rgb(195, 22, 22);
+  transition: 0.7s;
+}
+
+.produto:active {
+  border-color: rgb(22, 195, 54);
+  transition: 0.7s;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 1rem 0 rgba(0, 0, 0, 0.5);
+  transition: 0.7s;
+  margin-bottom: 2rem;
+}
+
+.produto img:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+.produto h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.produto:hover h2 {
+  font-size: 2.5rem;
+  transition: 0.7s;
+}
+
+.produto p {
+  font-size: 1.5rem;
+}
+
+.produto-descricao {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.produto-preco {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*form----------------------------------------------------------------------------------------------*/
+.contato {
+  width: 100%;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 3rem;
+  background-color: azure;
+  padding: 3rem;
+}
+
+form label, legend {
+  display: block;
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+}
+
+select {
+  width: 20rem;
+  border-radius: 3rem;
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+option {
+  font-size: 1.5rem;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 2rem;
+  padding: 1rem 2.5rem;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  width: 60%;
+}
+
+.checkbox {
+  display: block;
+  margin: 2rem 0;
+}
+
+#btn-enviar {
+  padding: 1rem 2.5rem;
+  border: none;
+  background-color: rgb(22, 36, 195);
+  color: rgb(255, 255, 255);
+  transition: 0.7s;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#btn-enviar:hover{
+  background-color: rgb(195, 22, 22);
+  transition: 0.7s linear;
+  transform: skewX(-10deg) scale(1.2);
+}
+
+/*===================== Fim CSS Form===================== */
+
+/*===================== CSS tabela ===================== */
+
+table {
+  width: 50%;
+  margin-top: 2rem;
+  margin-left: 25%;
+}
+
+thead {
+  background-color: rgb(22, 36, 195);
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  border: 0.1rem solid rgb(0, 0, 0);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.8rem 1.5rem;
+}
+
+tbody tr > td:hover {
+  background-color: rgb(84, 84, 84);
+  color: #fff;
+  transition: 0.7s;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .produto {
+    width: auto;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 3rem;
+    height: auto;
+    transition: 0.7s;
+  }
+}
+
+@media screen and (max-width: 790px) {
+
+  nav {    
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    margin-bottom: 2rem;
+  }
+
+  .servicos {
+    display: flex;
+  }
+  
+  .itens {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  
+    font-style: italic;
+    cursor: pointer;
+  }
+  
+  .imgbeneficios {
+    width: 100%;
+    border-radius: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .video {
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .produtos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .produto {
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 3rem;
+    height: auto;
+    transition: 0.7s;
+  }
+
+  .contato {
+    width: 100%;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .input-padrao {
+    width: 100%;
+  }
+
+  #btn-enviar:hover{
+    background-color: rgb(195, 22, 22);
+    transition: 0.7s;
+    transform: skewX(-10deg) scale(1.1);
+  }
+
+}
